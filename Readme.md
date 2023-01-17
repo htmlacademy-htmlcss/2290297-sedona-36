@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Полина Гусарова](https://up.htmlacademy.ru/htmlcss/36/user/2290297).
-* Наставник: [Екатерина Комнатная] (https://htmlacademy.ru/profile/id215761)
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761)
 
 ---
 
