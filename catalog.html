@@ -1,4 +1,5 @@
-html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
@@ -7,7 +8,7 @@ html lang="ru">
     <header class="page-header">
       <nav class="navigation">
         <div>
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
           <img src="#" alt="Логотип">
           </a>
         </div>
@@ -19,7 +20,7 @@ html lang="ru">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list">
@@ -37,5 +38,31 @@ html lang="ru">
           <button class="button">Хочу сюда!</button>
       </nav>
     </header>
+      <main class="main-inner">
+        <header class="header-inner">
+          <h1 class="header-inner-title">Гостиницы</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html"></a>
+              <img src="" alt="На главную страницу">
+              <span class="visually-hidden">Главная</span>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
+        <section class="infrastructure">
+          <fieldset>
+            <form action="https://echo.htmlacademy.ru/" method="get"></form>
+            <legend>Инфраструктура:</legend>
+          </fieldset>
+
+        </section>
+
+
+
+      </main>
+
   </body>
 </html>
