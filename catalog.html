@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-  </head>
+    <link rel="stylesheet" href="styles/styles.css">
+    </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
@@ -109,6 +109,7 @@
       </section>
       <section class="filtres">
         <h3 class="search">Найдено гостиниц:38</h3>
+        <div class="sorting">
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -123,6 +124,7 @@
         <button class="button-sort">
           <span class="visually-hidden">Список</span>
         </button>
+      </div>
       </section>
       <article class="hotel">
         <img src="images/catalog/hotel-1.jpg" width="300" height="212" alt="фотография звездного неба">
@@ -133,7 +135,6 @@
         <button class="button hotel-like" type="button">В избранное</button>
           <span class="stars">4</span>
           <span class="hotel-rating">Рейтинг:8,5</span>
-          <!--нужно вставить звездочки-->
       </article>
       <article class="hotel">
         <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="фотография гор и радуги">
