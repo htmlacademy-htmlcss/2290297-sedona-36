@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     </head>
   <body>
+    <div style="background-color: #ffffff;">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -42,9 +43,10 @@
         <h1 class="header-inner-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"></a>
+            <a class="breadcrumbs-link" href="index.html">
             <img src="#" alt="На главную страницу">
             <span class="visually-hidden">Главная</span>
+          </a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -59,7 +61,7 @@
             <ul class="infrastructure-filter-list">
               <li class="infrastructure-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Bassein" checked>
+                  <input class="control-input" type="checkbox" name="Pool" checked>
                   Бассейн
                 </label>
               </li>
@@ -100,11 +102,11 @@
               </li>
             </ul>
           </fieldset>
-          <!----<fieldset class="price">
-            <legent class="price-filter">Стоимость, ₽:</legent>
+          <fieldset class="price">
+            <legend class="price-filter">Стоимость, ₽:</legend>
           </fieldset>
-          <button class="button" type="submit">Применить</button>
-           <button class="button" type="reset">Сбросить</button> кнопка или нет? -->
+            <button class="button button-use" type="submit">Применить</button>
+            <button class="button" type="reset">Сбросить</button>
         </form>
       </section>
       <section class="filtres">
@@ -142,7 +144,7 @@
         <p>Гостиница</p>
         <p>От 5000 ₽</p>
         <a href="#" class="button hotel-card">Подробнее</a>
-        <button class="button hotel-like" type="button">В избранном</button>
+        <button class="button hotel-like-cheked" type="button">В избранном</button>
           <span class="stars">4</span>
           <span class="hotel-rating">Рейтинг:9,2</span>
       </article>
@@ -188,7 +190,7 @@
           </button>
         </li>
         <li class="pagination-item">
-          <button type="button" class="pagination-button">
+          <button type="button" class="pagination-button-ellipsis">
             <span class="visually-hidden">...</span>
           </button>
         </li>
@@ -198,9 +200,9 @@
           </button>
         </li>
       </ol>
-    <section class="subscription">
-      <h2>Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <section class="subscription-catalog">
+      <h2 class="subscription-catalog-title">Подпишитесь на рассылку</h2>
+      <p class="subscription-catalog-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="subscription-email">Ваш e-mail</label>
         <input type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail">
@@ -211,15 +213,15 @@
     <footer class="footer-social">
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
+          <a href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Vkontakte</span></a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy">
+          <a href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span></a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+          <a href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
@@ -230,5 +232,6 @@
         </a>
       </address>
     </footer>
+    </div>
   </body>
 </html>
