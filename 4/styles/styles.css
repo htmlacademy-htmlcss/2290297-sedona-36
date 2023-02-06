@@ -23,7 +23,11 @@ body {
   background-color: #F2F2F2;
 }
 
+ul,
+ol {
+list-style: none;
 
+}
 .page-header {
   color: #000000;
   background-color: #ffffff;
@@ -34,10 +38,9 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #333333;
   text-decoration: none;
   text-transform: capitalize;
-
+  color: #000000;
 
 }
 
@@ -109,7 +112,6 @@ body {
 
 .real-town {
   text-align: left;
-
 }
 
 .advantages-description-blue {
@@ -178,7 +180,11 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
-  background: #82B3D3;
+
+}
+
+.background-blue {
+background-color: #82B3D3;
 
 }
 
@@ -197,7 +203,7 @@ body {
   width: 73px;
   height: 21px;
   color: #ffffff;
-  background: #82B3D3;
+
 }
 
 
@@ -207,12 +213,12 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
-  background: #82B3D3;
+
 }
 
 .control {
   color: #ffffff;
-  background: #82B3D3;
+
 }
 
 .control-input {
@@ -235,17 +241,23 @@ body {
 
 }
 
+/* Название гостиниц */
+
 .hotel-card {
   text-decoration: none;
   border-radius: 4px;
 
 }
 
+/* в Избранное */
+
 .hotel-like {
   background: #82B3D3;
   border-radius: 4px;
 
 }
+
+/* Добвалено в избранное */
 
 .hotel-like-cheked {
   background: #7DB54F;
@@ -262,36 +274,42 @@ body {
 
 }
 
-.pagination-button-current{
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  width: 60px;
-  height: 60px;
-  background: #F2F2F2;
-  border: none;
-  color: #000000;
-}
-.pagination-button {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  width: 60px;
-  height: 60px;
-  background: #82B3D3;
-  color: #ffffff;
-  border: none;
+
+.pagination-link-current {
+font-family: "PT Sans", sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background-color: #F2F2F2;
+text-decoration: none;
+
 }
 
-.pagination-button-ellipsis{
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  width: 60px;
-  height: 60px;
-  color: #000000;
-  text-align: center;
-  border: none;
+.pagination-link {
+font-family: "PT Sans", sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #ffffff;
+background-color: #82B3D3;
+text-decoration: none;
+}
+
+.pagination-next {
+font-family: "PT Sans", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+width: 60px;
+height: 60px;
 
 }
 
