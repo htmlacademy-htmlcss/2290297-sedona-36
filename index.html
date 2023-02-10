@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div style="background-color: #ffffff;">
+    <div class="container">
 <header class="page-header">
   <nav class="navigation">
     <a class="navigation-logo" href="index.html">
       <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип города">
     </a>
-    <ul class="navigation-list">
+    <ul class="navigation-list navigation-user">
       <li class="navigation-item">
         <a class="navigation-link" href="#">Главная</a>
       </li>
@@ -25,9 +25,7 @@
     </ul>
     <ul class="navigation-list">
       <li class="navigation-item">
-        <a class="navigation-link" href="#">
         <span class="visually-hidden">Поиск</span>
-        </a>
       </li>
     <li class="navigation-item">
       <a class="navigation-link" href="#">
@@ -39,41 +37,43 @@
       <button class="button">Хочу сюда!</button>
   </nav>
 </header>
-<main class="main-index">
+<main class="main-container main-index">
   <section class="hero">
     <h1 class="visually-hidden">Седона</h1>
     <img src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать">
+  </section>
+    <section class="advantages">
+      <h2 class="intro">Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="causes">Рассмотрим причины, по которым Седона круче,чем Гранд-Каньон!</p>
     </section>
-    <h2 class="intro">Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
-    <p class="causes">Рассмотрим причины, по которым Седона круче,чем Гранд-Каньон!</p>
-  <section class="advantages">
     <ul class="advantages-list">
-      <li class="advantages-item-blue">
+      <li class="advantages-item advantages-blue">
         <div class="real-town">
-          <h3 class="advanteges-title">Настоящий городок</h3>
-          <p class="advantages-description-blue">Седона-не аттракцион для туристов,там течет своя жизнь</p>
+          <h3 class="advanteges-title advanteges-title-blue">Настоящий городок</h3>
+          <p class="advantages-description advantages-description-blue">Седона-не аттракцион для туристов,там течет своя жизнь</p>
         </div>
-        <img src="images/photo-1.jpg" width="800" height="384" alt="Город">
+        <img class="real-town-photo" src="images/photo-1.jpg" width="800" height="384" alt="Город">
       </li>
-      <li class="advantages-item">
+        <li class="advantages-item advantages-light">
         <h3 class="advanteges-title">Небольшая площадь</h3>
         <p class="advantages-description">Все достопримечательности находятся очень близко</p>
       </li>
-      <li class="advantages-item">
-        <h3 class="advanteges-title">Красивая дорога</h3>
+      <li class="advantages-item advantages-dark">
+        <h3 class="advanteges-title ">Красивая дорога</h3>
         <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </li>
-      <li class="advantages-item">
+      <li class="advantages-item advantages-light">
         <h3 class="advanteges-title">Мало туристов</h3>
         <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
       </li>
-      <li class="advantages-item-blue">
-        <h3 class="advanteges-title">Там есть мост дьявола</h3>
-        <p class="advantages-description-blue">Да, по нему можно пройти!Если вы осмелитесь, разумеется</p>
+      <li class="advantages-item advantages-blue">
+        <div class="advanteges-bridge">
+          <h3 class="advanteges-title advanteges-title-blue">Там есть мост дьявола</h3>
+          <p class="advantages-description advantages-description-blue">Да, по нему можно пройти!Если вы осмелитесь, разумеется</p>
+        </div>
         <img src="images/photo-2.jpg" width="800" height="355" alt="Мост дьявола">
       </li>
     </ul>
-  </section>
   <section class="servises">
     <h2 class="intro">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
     <p class="causes">Опытный персонал и качественное обслуживание!</p>
@@ -112,7 +112,7 @@
     <span class="visually-hidden">Vkontakte</span></a>
   </li>
   <li class="footer-social-item">
-    <a class="footer-social-link"href="https://t.me/htmlacademy">
+    <a class="footer-social-link" href="https://t.me/htmlacademy">
     <span class="visually-hidden">Telegram</span></a>
   </li>
   <li class="footer-social-item">
