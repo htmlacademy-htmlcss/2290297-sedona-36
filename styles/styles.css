@@ -44,12 +44,11 @@ body {
   flex-grow: 1;
 }
 
-
 .page-header {
   color: #000000;
   background-color: #ffffff;
-}
 
+}
 
 .navigation {
   display: flex;
@@ -57,15 +56,25 @@ body {
   margin: 0 auto;
 }
 
+.navigation-logo {
+margin-left: 70px;
+}
+
+.logo {
+display: block;
+}
+
 .navigation-list {
   width: 507px;
-  margin: 0;
-  padding: 0;
+
 }
 
 .navigation-user {
-  width: 268;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 268px;
 
 }
 
@@ -80,6 +89,11 @@ body {
 
 }
 
+.navigation-favorites {
+  display: flex;
+  justify-content: flex-end;
+  width: 268px;
+}
 
 .button {
   font-family: "PT Sans", sans-serif;
@@ -91,19 +105,15 @@ body {
   border: none;
   text-transform: uppercase;
   text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
 
 }
 
 .hero {
-  display:block;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   background-image: url("../images/hero-end.png"), url("../images/hero.jpg");
   background-size: 100% auto, 100% auto;
-  height: 485px;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
   background-position: bottom center, top center;
@@ -118,7 +128,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   width: 620px;
-  height: 72px;
+  margin-top: 69px;
+
 }
 
 .causes {
@@ -128,17 +139,21 @@ body {
   text-align: center;
   color: #333333;
   width: 651px;
-  height: 26px;
+  margin-bottom: 69px;
+
+
 }
 
-.advantages-description {
-  color: #333333;
-  width: 230px;
-  height: 42px;
-  text-align: center;
-}
 
 .advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.advantages-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,20 +162,27 @@ body {
 
 .advantages-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+
 }
 
+.advantages-description {
+  color: #333333;
+  width: 230px;
+  height: 42px;
+  text-align: center;
+
+}
 .advantages-blue {
+  flex-direction: row;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   color: #FFFFFF;
   background: #82B3D3;
-
 }
 
 .advantages-description-blue {
@@ -173,13 +195,6 @@ body {
 
 .real-town {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-
-}
-
-.advanteges-title-blue {
   width: 400px;
 
 }
@@ -192,20 +207,14 @@ body {
   width: 175px;
   height: 56px;
   text-align: center;
-}
 
-.advantages-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .advantages-light {
   width: 400px;
   height: 400px;
   background: rgba(131, 179, 211, 0.12);
-  margin: 0;
+
 }
 
 .advantages-dark {
@@ -214,26 +223,33 @@ body {
   background: rgba(131, 179, 211, 0.2);
 }
 
-.servises-list{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 .advanteges-bridge {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
+
+/* Сервис */
+
+.servises-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .servises-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   height: 385px;
   background: rgba(131, 179, 211, 0.12);
 
 }
 
-/*
 .servises-title{
   font-weight: 700;
   font-size: 24px;
@@ -241,15 +257,85 @@ body {
   text-transform: uppercase;
   width: 175px;
   height: 56px;
+  text-align: center;
 }
-*/
 
-.causes-subscription {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  color: #ffffff;
+
+.servises-description {
+width: 230px;
+height: 42px;
+text-align: center;
+margin: 0;
+
 }
+
+.servises {
+  padding-top: 64px;
+}
+
+.intro-servises {
+  width: 505px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.causes-servises {
+  width: 490px;
+  margin: 0 auto;
+  padding-bottom: 64px;
+
+}
+
+.servises-item-dark {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.servises-item-light {
+  background: #FFFFFF;
+}
+
+/* поиск гостницы */
+
+.page-main_story {
+  padding-top: 96px;
+  padding-bottom: 126px;
+
+  }
+
+  .intro-main_story {
+    width: 297px;
+    margin: 0 auto;
+    color: #000000;
+
+  }
+
+  .causes-main_story {
+  width: 592px;
+  margin: 0 auto;
+  padding: 50px;
+  color: #333333;
+  text-align: center;
+  }
+
+  .button-search {
+    width: 376px;
+    display: block;
+    margin: 0 auto;
+    padding: 8px 8px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background-color: #756157;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+
+
+  }
+
 
 .subscription {
   background-image: url("../images/subscribe.jpg");
@@ -258,20 +344,31 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
+  height: 415px;
 }
 
-.button-search {
-  font-family: "PT Sans", sans-serif;
+.intro-subscription {
+  width: 404px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 36px;
-  color: #FFFFFF;
-  background-color: #756157;
+  text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 4px;
-
+  margin-left: 398px;
+  padding-top: 96px;
 }
+
+
+.causes-subscription {
+  width: 475px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+
 .subscription-button {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -283,6 +380,38 @@ body {
   text-transform: uppercase;
 }
 
+/* подвал */
+.footer-social {
+  padding-top: 40px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+}
+
+.footer-social-container {
+  display: flex;
+}
+
+.footer-social-list {
+  width: 142px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 4px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social-item {
+width: 47px;
+height: 40px;
+}
+
+.footer-social-link {
+display: block;
+width: 100%;
+}
 
 .contacts,
 .contacts-phone {
@@ -294,6 +423,14 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  width: 720px;
+}
+
+.htmlacademy-link {
+  display: block;
+  width: 115px;
+  margin-left: auto;
+
 }
 
 /* Каталог*/
