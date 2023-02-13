@@ -30,6 +30,8 @@ body {
   height: 100%;
 }
 
+
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -54,10 +56,11 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+
 }
 
 .navigation-logo {
-margin-left: 70px;
+  margin-left: 70px;
 }
 
 .logo {
@@ -65,20 +68,21 @@ display: block;
 }
 
 .navigation-list {
-  width: 507px;
-
+  display: flex;
+  width: 268px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 268px;
-
+  width: 615px;
+  margin-right: 268px;
 }
 
 .navigation-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -86,13 +90,15 @@ display: block;
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
+}
 
+.navigation-item {
+  display: block;
+  padding: 20px 16px;
 }
 
 .navigation-favorites {
-  display: flex;
-  justify-content: flex-end;
-  width: 268px;
+
 }
 
 .button {
@@ -171,7 +177,7 @@ display: block;
 .advantages-description {
   color: #333333;
   width: 230px;
-  height: 42px;
+
   text-align: center;
 
 }
@@ -185,17 +191,26 @@ display: block;
   background: #82B3D3;
 }
 
+.advanteges-title-blue {
+margin: 0;
+
+}
+
 .advantages-description-blue {
   color:#ffffff;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 
+
+
 }
 
 .real-town {
   display: flex;
   width: 400px;
+  flex-direction: column;
+  align-items: center;
 
 }
 
@@ -225,10 +240,15 @@ display: block;
 
 .advanteges-bridge {
   display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+  flex-direction:column;
+  width: 400px;
 }
 
+.advantages-blue-reverse {
+  flex-direction: row-reverse;
+}
 
 /* Сервис */
 
@@ -256,7 +276,6 @@ display: block;
   line-height: 28px;
   text-transform: uppercase;
   width: 175px;
-  height: 56px;
   text-align: center;
 }
 
@@ -333,18 +352,17 @@ margin: 0;
     border-radius: 4px;
     text-align: center;
 
-
   }
-
 
 .subscription {
   background-image: url("../images/subscribe.jpg");
   color: #ffffff;
   background-color: #000000;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   text-align: center;
   height: 415px;
+  padding-top: 96px;
 }
 
 .intro-subscription {
@@ -355,7 +373,7 @@ margin: 0;
   text-align: center;
   text-transform: uppercase;
   margin-left: 398px;
-  padding-top: 96px;
+
 }
 
 
@@ -366,11 +384,12 @@ margin: 0;
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
-}
 
+}
 
 .subscription-button {
   font-family: "PT Sans", sans-serif;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
