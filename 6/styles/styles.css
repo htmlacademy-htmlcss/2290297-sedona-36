@@ -1,0 +1,630 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  background-color: #F2F2F2;
+  height: 100%;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #ffffff;
+
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.navigation-logo {
+  position: relative;
+  margin-left: 70px;
+  margin-bottom: -20px;
+}
+
+.logo {
+display: block;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 110px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-user {
+  display: flex;
+  width: 615px;
+  margin-right: auto;
+}
+
+.navigation-link {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.navigation-item {
+  display: block;
+  padding: 20px 16px;
+}
+
+.navigation-favorites,
+.navigation-list {
+  min-width: 44px;
+  min-height: 64px;
+
+}
+
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756157;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-image: url("../images/hero-end.png"), url("../images/hero.jpg");
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  text-align: center;
+  background-position: bottom center, top center;
+  padding: 60px;
+
+}
+
+.intro {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 620px;
+  margin-top: 69px;
+
+}
+
+.causes {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  width: 651px;
+  margin-bottom: 69px;
+
+
+}
+
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+}
+
+.advantages-description {
+  color: #333333;
+  width: 230px;
+  text-align: center;
+
+}
+.advantages-blue {
+  flex-direction: row;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.advanteges-title-blue {
+margin: 0;
+
+}
+
+.advantages-description-blue {
+  color:#ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+
+
+}
+
+.real-town {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.advanteges-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  width: 175px;
+  height: 56px;
+  text-align: center;
+
+}
+
+.advantages-light {
+  width: 400px;
+  height: 400px;
+  background: rgba(131, 179, 211, 0.12);
+
+}
+
+.advantages-dark {
+  width: 400px;
+  height: 400px;
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advanteges-bridge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  width: 400px;
+}
+
+.advantages-blue-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Сервис */
+
+.servises-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.servises-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  min-height: 385px;
+  background: rgba(131, 179, 211, 0.12);
+
+}
+
+.servises-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  width: 175px;
+  text-align: center;
+}
+
+
+.servises-description {
+width: 230px;
+text-align: center;
+margin: 0;
+
+}
+
+.servises {
+  padding-top: 64px;
+}
+
+.intro-servises {
+  width: 505px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.causes-servises {
+  width: 490px;
+  margin: 0 auto;
+  padding-bottom: 64px;
+
+}
+
+.servises-item-dark {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.servises-item-light {
+  background: #FFFFFF;
+}
+
+/* поиск гостницы */
+
+.page-main_story {
+  padding-top: 96px;
+  padding-bottom: 126px;
+
+  }
+
+  .intro-main_story {
+    width: 297px;
+    margin: 0 auto;
+    color: #000000;
+
+  }
+
+  .causes-main_story {
+    width: 592px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #333333;
+    text-align: center;
+  }
+
+  .button-search {
+    width: 376px;
+    display: block;
+    margin: 0 auto;
+    padding: 8px 8px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background-color: #756157;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+
+  }
+
+.subscription {
+  background-image: url("../images/subscribe.jpg");
+  color: #ffffff;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 415px;
+  padding-top: 96px;
+
+}
+
+.intro-subscription {
+  width: 404px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 398px;
+
+}
+
+
+.causes-subscription {
+  width: 475px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+
+}
+
+.subscription-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background: #82B3D3;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  padding: 8px 50px;
+}
+
+.subscription-form {
+display: flex;
+justify-content: center;
+
+}
+
+/* подвал */
+.footer-social {
+  padding-top: 40px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+}
+
+.footer-social-container {
+  display: flex;
+}
+
+.footer-social-list {
+  width: 142px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social-item {
+width: 47px;
+height: 40px;
+}
+
+.footer-social-link {
+display: block;
+width: 100%;
+}
+
+.contacts,
+.contacts-phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 720px;
+}
+
+.htmlacademy-link {
+  display: block;
+  width: 115px;
+  margin-left: auto;
+
+}
+
+/* Каталог*/
+
+.header-inner-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+
+}
+
+.background-blue {
+background-color: #82B3D3;
+
+}
+
+.button-use {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background: #82B3D3;
+  border-radius: 4px;
+}
+.search {
+  text-transform: uppercase;
+}
+
+.breadcrumbs-link {
+  width: 73px;
+  height: 21px;
+  color: #ffffff;
+
+}
+
+
+.infrastructure-filter-title,
+.price-filter {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+}
+
+.control {
+  color: #ffffff;
+
+}
+
+.control-input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+}
+
+.sorting {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.hotel-tittle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+
+}
+
+/* Название гостиниц */
+
+.hotel-card {
+  text-decoration: none;
+  border-radius: 4px;
+
+}
+
+/* в Избранное */
+
+.hotel-like {
+  background: #82B3D3;
+  border-radius: 4px;
+
+}
+
+/* Добвалено в избранное */
+
+.hotel-like-cheked {
+  background: #7DB54F;
+  border-radius: 4px;
+}
+
+.hotel-rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  background: #F2F2F2;
+  border-radius: 4px;
+
+}
+
+
+.pagination-link-current {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #F2F2F2;
+  text-decoration: none;
+
+}
+
+.pagination-link {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.pagination-next {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  width: 60px;
+  height: 60px;
+
+}
+
+.subscription-catalog-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscription-catalog-info {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
