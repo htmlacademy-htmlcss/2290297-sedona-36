@@ -30,6 +30,7 @@ body {
   height: 100%;
 }
 
+/*
 
 .visually-hidden {
   position: absolute;
@@ -42,7 +43,7 @@ body {
   overflow: hidden;
 }
 
-
+*/
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -104,18 +105,18 @@ display: block;
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
+  padding: 20px 16px;
+
 }
 
 .navigation-item {
   display: block;
-  padding: 20px 16px;
 }
 
 .navigation-favorites,
 .navigation-list {
   min-width: 44px;
   min-height: 64px;
-
 }
 
 .button {
@@ -163,7 +164,6 @@ display: block;
   color: #333333;
   width: 651px;
   margin-bottom: 69px;
-
 
 }
 
@@ -217,8 +217,6 @@ margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-
-
 
 }
 
@@ -475,16 +473,63 @@ width: 100%;
 
 /* Каталог*/
 
+
+
+.background-blue {
+  display: flex;
+  background-image: url("../images/catalog/subscribe-2.jpg");
+  margin: 0 auto;
+}
+
 .header-inner-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
+  margin-bottom: 11px;
 
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.breadcrumbs-link {
+  margin-right: 10px;
+  width: 73px;
+  height: 21px;
+  color: #ffffff;
+}
+
 .background-blue {
-background-color: #82B3D3;
+  display: block;
+}
+
+.infrastructure {
+display: flex;
+flex-direction: row;
+
+
+}
+
+
+.infrastructure-filter-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+
+}
+
+.infrastructure-filter-item {
+display: flex;
+max-height: 157px;
 
 }
 
@@ -499,12 +544,6 @@ background-color: #82B3D3;
   text-transform: uppercase;
 }
 
-.breadcrumbs-link {
-  width: 73px;
-  height: 21px;
-  color: #ffffff;
-
-}
 
 
 .infrastructure-filter-title,
