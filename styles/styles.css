@@ -14,6 +14,7 @@
   font-display: swap;
 }
 
+
 html {
   height: 100%;
 }
@@ -60,20 +61,23 @@ body {
 .page-header {
   color: #000000;
   background-color: #ffffff;
+  padding-right: 70px;
+
 
 }
 
 .navigation {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  align-items: center;
+
 
 }
 
 .navigation-logo {
   position: relative;
   margin-left: 70px;
-  margin-bottom: -20px;
+
+
 }
 
 .logo {
@@ -88,7 +92,6 @@ display: block;
   padding: 0;
   list-style-type: none;
 }
-
 .navigation-user {
   display: flex;
   width: 615px;
@@ -96,7 +99,9 @@ display: block;
 }
 
 .navigation-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -104,17 +109,44 @@ display: block;
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
+  width: 44px;
+  height: 64px;
+
 }
+
+.navigation-link-user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000000;
+  width: 100px;
+  height: 64px;
+
+}
+
 
 .navigation-item {
   display: block;
-  padding: 20px 16px;
 }
 
 .navigation-favorites,
 .navigation-list {
   min-width: 44px;
   min-height: 64px;
+}
+
+.button-navigation {
+  display: block;
+  min-width: 160px;
+  padding: 8px 34px;
+  border-radius: 4px;
+  margin-left: 20px;
 
 }
 
@@ -163,7 +195,6 @@ display: block;
   color: #333333;
   width: 651px;
   margin-bottom: 69px;
-
 
 }
 
@@ -217,8 +248,6 @@ margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-
-
 
 }
 
@@ -416,42 +445,39 @@ margin: 0;
 }
 
 .subscription-form {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 
 }
 
 /* подвал */
 .footer-social {
-  padding-top: 40px;
-  padding-right: 70px;
-  padding-bottom: 30px;
-  padding-left: 70px;
+padding-top: 40px;
+padding-right: 70px;
+padding-bottom: 30px;
+padding-left: 70px;
+display: grid;
+grid-template-columns: 1fr auto 1fr;
+align-items: center;
 }
 
-.footer-social-container {
-  display: flex;
+.footer-social-link {
+  display: inline-block;
+  width: 48px;
+  height: 40px;
+  outline: 1px solid blue;
+
 }
+
 
 .footer-social-list {
-  width: 142px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3,48px);
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.footer-social-item {
-width: 47px;
-height: 40px;
-}
-
-.footer-social-link {
-display: block;
-width: 100%;
-}
 
 .contacts,
 .contacts-phone {
@@ -463,28 +489,73 @@ width: 100%;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  width: 720px;
+
 }
 
 .htmlacademy-link {
-  display: block;
-  width: 115px;
-  margin-left: auto;
-
+display:inline-block;
+margin-left: auto;
 }
 
 /* Каталог*/
+
+
+
+.background-blue {
+  display: flex;
+  background-image: url("../images/catalog/subscribe-2.jpg");
+  margin: 0 auto;
+}
 
 .header-inner-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
+  margin-bottom: 11px;
 
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.breadcrumbs-link {
+  margin-right: 10px;
+  width: 73px;
+  height: 21px;
+  color: #ffffff;
+}
+
 .background-blue {
-background-color: #82B3D3;
+  display: block;
+}
+
+.infrastructure {
+display: flex;
+flex-direction: row;
+
+
+}
+
+
+.infrastructure-filter-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+
+}
+
+.infrastructure-filter-item {
+display: flex;
+
 
 }
 
@@ -499,12 +570,6 @@ background-color: #82B3D3;
   text-transform: uppercase;
 }
 
-.breadcrumbs-link {
-  width: 73px;
-  height: 21px;
-  color: #ffffff;
-
-}
 
 
 .infrastructure-filter-title,
