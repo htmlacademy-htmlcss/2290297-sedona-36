@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../2290297-sedona-36/images/favicon-32x32.png">
     <base href="https://htmlacademy-htmlcss.github.io/2290297-sedona-36/8/">
 </head>
   <body>
@@ -26,7 +28,7 @@
     </ul>
     <ul class="navigation-list navigation-favorites">
       <li class="navigation-item">
-        <a class="navigation-link" href="#">
+        <a class="navigation-link navigation-search" href="#">
         <span class="visually-hidden">Поиск</span>
         </a>
       </li>
@@ -59,7 +61,7 @@
         <img class="real-town-photo" src="images/photo-1.jpg" width="800" height="384" alt="Город">
       </li>
         <li class="advantages-item advantages-light">
-        <h3 class="advantages-title advantages-title">Небольшая площадь</h3>
+        <h3 class="advantages-title">Небольшая площадь</h3>
         <p class="advantages-description">Все достопримечательности находятся очень близко</p>
       </li>
       <li class="advantages-item advantages-dark">
@@ -86,7 +88,6 @@
         <li class="servises-item servises-item-dark">
           <h3 class="servises-title servises-title-house">Жильё</h3>
           <p class="servises-description">Рекомендуем пожить<br>как в настоящем мотеле,<br> все как в кино!</p>
-        </li>
         <li class="servises-item servises-item-light">
           <h3 class="servises-title servises-title-food">Еда</h3>
           <p class="servises-description">Всегда заказывайте <br>топовый фирменный бургер,<br> вы не разочаруетесь!</p>
@@ -173,5 +174,63 @@
     </a>
 </footer>
 </div>
+<div class="modal-container modal-container-close">
+  <div class="modal modal-search-form">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-tittle">Поиск гостиницы в Седоне</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="field-group">
+          <label class="form-label" for="arrival-date">Дата заезда:</label>
+          <input class="date-form" type="text" name="arrival-date" id="arrival-date" value="27 апреля 2020" placeholder="Укажите дату заезда">
+          <span class="date-message message-mistake">Мы не можем отправить вас в прошлое.</span>
+        </p>
+        <p class="field-group">
+          <label class="form-label" for="departure-date">Дата Выезда:</label>
+          <input class="date-form" type="text" name="departure-date" id="departure-date" value="1 сентября 2023" placeholder="Укажите дату выезда">
+          <span class="date-message">На эти даты есть свободные номера.Пока есть.</span>
+        </p>
+        <div class="field-group-tourists">
+          <div class="field-group-quantity">
+            <label class="form-label" for="modal-adults">Взрослые:</label>
+            <div class="modal-more-less">
+              <button class="slyder slyder-min" type="button">
+              <span class="visually-hidden">Меньше</span></button>
+              <input class="tourists-choice" type="number" name="modal-adults" id="modal-adults" value="2">
+              <button class="slyder slyder-max" type="button">
+              <span class="visually-hidden">Больше</span></button>
+        </div>
+        </div>
+        <div class="field-group-tourists">
+        <span class="form-label">
+          <label class="form-label" for="modal-children">Дети:</label>
+          <span class="tooltip">
+              <button class="tooltip-toggle" type="button">
+              <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="3" height="12" viewBox="0 0 3 12" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z"/>
+              </svg></button>
+              <span class="tooltip-info">Укажите количество детей,<br>которые будут с вами,возраст<br>которых от 6 до 18 лет.Дети<br>до 6 лет развещаются бесплатно.</span>
+          </span>
+        </span>
+        </div>
+        <div class="field-group-quantity">
+          <div class="modal-more-less">
+          <button class="slyder slyder-min" type="button">
+            <span class="visually-hidden">Меньше</span>
+          </button>
+          <input class="tourists-choice" type="number" name="modal-children" id="modal-children" value="2">
+            <button class="slyder slyder-max" type="button">
+            <span class="visually-hidden">Больше</span>
+            </button>
+          </div>
+          </div>
+        </div>
+          <button class="button-hotel" type="submit">Найти</button>
+        </form>
+      </section>
+</div>
+  </div>
   </body>
 </html>
