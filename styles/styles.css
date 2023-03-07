@@ -276,7 +276,6 @@ background-position: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .advantages-list {
@@ -302,8 +301,10 @@ background-position: center;
   background: #82B3D3;
 }
 
+
+
 .advantages-title-blue {
-margin: 0;
+  margin: 0;
 
 }
 
@@ -324,14 +325,16 @@ margin: 0;
 
 }
 
+
 .real-town::before {
   content:"";
   position: absolute;
   top: 90px;
   width: 60px;
   height: 2px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 
 .advantages-title {
   font-weight: 700;
@@ -341,10 +344,24 @@ margin: 0;
   width: 175px;
   text-align: center;
   margin-bottom: 50px;
+  position: relative;
 
 
 }
 
+.advantages-title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  margin-top: 86px;
+  background-color:  rgba(0, 0, 0, 0.3);
+}
 
 .advantages-light {
   width: 400px;
@@ -371,7 +388,7 @@ margin: 0;
   flex-direction: row-reverse;
 }
 
-
+/*
 .advantages-item:not(:last-child, :first-child)::before {
 content: "";
 position: absolute;
@@ -379,7 +396,7 @@ width: 60px;
 height: 2px;
 background-color:  rgba(0, 0, 0, 0.3);
 }
-
+*/
 
 .advantages-bridge::before{
   content: "";
@@ -387,7 +404,7 @@ background-color:  rgba(0, 0, 0, 0.3);
   top:90px;
   width: 60px;
   height: 2px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
 }
 
@@ -728,7 +745,7 @@ color:#000000;
 
 
 /* Модальное окно */
-/*
+
 .modal-container {
   position: fixed;
   display: flex;
@@ -868,7 +885,6 @@ color:#000000;
 
 }
 
-
 .modal-more-less {
   display: flex;
   width: 110px;
@@ -876,31 +892,22 @@ color:#000000;
 
 .tooltip {
   position: absolute;
-  margin-top: 3px;
   margin-left: 9px;
 }
 
 
+
 .tooltip-toggle {
   display: block;
-  background-color: #F2F2F2;
-  border: none;
-  width: 40px;
-  padding: 0;
-  margin: 0;
-}
-
-.tooltip-icon {
-  position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   border-radius: 50px;
-
-}
-
-.tooltip-toggle:hover .tooltip-icon {
-  color:#ffffff;
-}
+  background-image: url("../images/tooltip.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #83B3D3;
+  border: none;
+  }
 
 
 .tooltip-info {
@@ -918,6 +925,7 @@ color:#000000;
   position: absolute;
   bottom:100%;
   margin-bottom: 9px;
+
 }
 
 .slyder {
@@ -974,11 +982,17 @@ color:#000000;
   padding: 18px 256px;
   cursor: pointer;
 
-
 }
 
+.button-hotel:hover {
+  background-color: #68A2CA;
+}
 
+.button-hotel:active {
+  background-color:#68A2CA;
+  color: rgba(255, 255, 255, 0.5);
 
+}
 
 /* Каталог*/
 
