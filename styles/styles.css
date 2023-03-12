@@ -165,14 +165,12 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
-
 }
 
 .navigation-link-user:hover,
 .navigation-link:hover {
   opacity: 0.5;
 }
-
 
 .navigation-link-current::after {
   content: "";
@@ -249,6 +247,7 @@ body {
 
 .button-navigation:active {
   background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-navigation:disabled {
@@ -264,9 +263,10 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
-  background-image: url("../images/hero-end.png"), url("../images/hero.jpg");
+  background-image: url("../images/hero-end.svg"), url("../images/hero.jpg");
   background-size: 100% auto, 100% auto;
   background-repeat: no-repeat, no-repeat;
+  background-color: #0c607570;
   text-align: center;
   height: 485px;
   background-position: left 0 bottom 0;
@@ -294,7 +294,6 @@ body {
   width: 671px;
   margin: 0;
   margin-bottom: 90px;
-
 }
 
 .advantages {
@@ -375,7 +374,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
-
 }
 
 .real-town {
@@ -456,7 +454,6 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 400px;
-
   padding: 102px 85px;
 }
 
@@ -509,13 +506,13 @@ body {
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
-
 }
 
 .servises-description {
   width: 230px;
   text-align: center;
   margin: 0;
+  color: #333333;
 }
 
 .servises {
@@ -533,8 +530,6 @@ body {
   margin: 0 auto;
   padding-bottom: 64px;
 }
-
-
 
 .servises-title-house::before {
   content: "";
@@ -568,7 +563,6 @@ body {
   background-repeat: no-repeat;
   margin-bottom: 30px;
 }
-
 
 .servises-item-dark {
   background: rgba(131, 179, 211, 0.12);
@@ -726,7 +720,6 @@ body {
   background-color: #E5E5E5;
   cursor: default;
 }
-
 
 /* подвал */
 .footer-social {
@@ -990,7 +983,6 @@ body {
   top: 216px;
   left: 207px;
   color: #FF5757;
-  ;
 }
 
 .message-right {
@@ -1158,7 +1150,6 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.3);
   opacity: 0.3;
 }
-
 
 .tourists-choice::-webkit-outer-spin-button,
 .tourists-choice::-webkit-inner-spin-button {
