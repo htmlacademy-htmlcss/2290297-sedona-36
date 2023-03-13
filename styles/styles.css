@@ -381,6 +381,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 400px;
+  padding: 102px 85px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -843,11 +844,11 @@ body {
 
 
 /*Закрыть модальное окно*/
-
+/*
 .modal-container-close {
   display: none;
 }
-
+*/
 .modal-close-button {
   position: absolute;
   top: 63px;
@@ -938,6 +939,7 @@ body {
   line-height: 24px;
   color: #000000;
   padding-left: 20px;
+  padding-right: 50px;
   margin: 0;
   background-image: url("..//images/date.svg");
   background-repeat: no-repeat;
@@ -975,26 +977,28 @@ body {
 }
 
 .message-mistake {
-  position: absolute;
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  padding-top: 4px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  top: 216px;
-  left: 207px;
   color: #FF5757;
 }
 
 .message-right {
-  position: absolute;
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  padding-top: 4px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  top: 312px;
-  left: 207px;
-  right: 139px;
+
 }
 
 .field-group-tourists {
