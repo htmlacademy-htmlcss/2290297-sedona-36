@@ -391,6 +391,12 @@ body {
   align-items: center;
 }
 
+.real-town-photo {
+  width: 800px;
+  height: 100%;
+  object-fit: cover;
+}
+
 .advantages-title {
   position: relative;
   font-weight: 700;
